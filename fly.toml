@@ -1,0 +1,10 @@
+# fly.toml file generated for erbensystems-redis on 2022-11-13T14:27:38+07:00
+
+app = "erbensystems-redis"
+kill_signal = "SIGINT"
+kill_timeout = 5
+processes = []
+
+[mounts]
+  destination = "/data"
+  source = "redis_data"
